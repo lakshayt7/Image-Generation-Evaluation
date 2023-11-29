@@ -57,7 +57,6 @@ if __name__ == "__main__":
     stats_path = args.fid_path #training set statistics
     text_prompt = args.text_prompt 
     gt_path = args.gt_images
-    inception_path = fid.check_or_download_inception(None) # download inception network
 
 
     if args.device is None:
