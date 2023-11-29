@@ -4,7 +4,7 @@ import os
 import glob
 #os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 import numpy as np
-import fid
+
 from scipy.misc import imread
 import tensorflow as tf
 
