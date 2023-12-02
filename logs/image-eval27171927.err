@@ -1,0 +1,26 @@
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.84s/it]100%|██████████| 1/1 [00:04<00:00,  4.92s/it]
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.94s/it]100%|██████████| 1/1 [00:02<00:00,  2.08s/it]
+/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/torchvision/transforms/functional.py:1603: UserWarning: The default value of the antialias parameter of all the resizing transforms (Resize(), RandomResizedCrop(), etc.) will change from None to True in v0.17, in order to be consistent across the PIL and Tensor backends. To suppress this warning, directly pass antialias=True (recommended, future default), antialias=None (current default, which means False for Tensors and True for PIL), or antialias=False (only works on Tensors - PIL will still use antialiasing). This also applies if you are using the inference transforms from the models weights: update the call to weights.transforms(antialias=True).
+  warnings.warn(
+Traceback (most recent call last):
+  File "src/main.py", line 37, in <module>
+    img_score, txt_score = clip_evaluator.evaluate(image_path, gt_path, text_prompt)
+  File "/gpfs/home/lt2504/dreambooth/Image-Generation-Evaluation/src/clip_score.py", line 111, in evaluate
+    sim_samples_to_img  = self.img_to_img_similarity(src_image, gen_sample)
+  File "/gpfs/home/lt2504/dreambooth/Image-Generation-Evaluation/src/clip_score.py", line 87, in img_to_img_similarity
+    src_img_features = self.get_image_features(src_images)
+  File "/gpfs/home/lt2504/dreambooth/Image-Generation-Evaluation/src/clip_score.py", line 79, in get_image_features
+    image_features = self.encode_images(img)
+  File "/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/gpfs/home/lt2504/dreambooth/Image-Generation-Evaluation/src/clip_score.py", line 65, in encode_images
+    return self.model.encode_image(images)
+  File "/gpfs/scratch/lt2504/image-eval/imagen/src/clip/clip/model.py", line 341, in encode_image
+    return self.visual(image.type(self.dtype))
+  File "/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/gpfs/scratch/lt2504/image-eval/imagen/src/clip/clip/model.py", line 227, in forward
+    x = torch.cat([self.class_embedding.to(x.dtype) + torch.zeros(x.shape[0], 1, x.shape[-1], dtype=x.dtype, device=x.device), x], dim=1)  # shape = [*, grid ** 2 + 1, width]
+RuntimeError: The size of tensor a (768) must match the size of tensor b (7) at non-singleton dimension 2

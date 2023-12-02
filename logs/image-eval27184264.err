@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/gpfs/share/apps/miniconda3/gpu/4.9.2/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/gpfs/share/apps/miniconda3/gpu/4.9.2/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/pytorch_fid/__main__.py", line 3, in <module>
+    pytorch_fid.fid_score.main()
+  File "/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/pytorch_fid/fid_score.py", line 313, in main
+    fid_value = calculate_fid_given_paths(args.path,
+  File "/gpfs/scratch/lt2504/image-eval/imagen/lib/python3.8/site-packages/pytorch_fid/fid_score.py", line 253, in calculate_fid_given_paths
+    raise RuntimeError('Invalid path: %s' % p)
+RuntimeError: Invalid path: /gpfs/scratc
+Traceback (most recent call last):
+  File "src/main.py", line 37, in <module>
+    img_score, txt_score = clip_evaluator.evaluate(image_path, gt_path, text_prompt)
+  File "/gpfs/home/lt2504/dreambooth/Image-Generation-Evaluation/src/clip_score.py", line 113, in evaluate
+    sim_samples_to_img  = self.img_to_img_similarity(src_image_pts, gen_sample_pts)
+NameError: name 'src_image_pts' is not defined

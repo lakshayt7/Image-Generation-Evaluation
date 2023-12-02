@@ -1,0 +1,66 @@
+GPUS = 0
+
+Thu Nov 30 11:10:00 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100 80G...  On   | 00000000:E3:00.0 Off |                    0 |
+| N/A   31C    P0    53W / 300W |      0MiB / 81920MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Warning: batch size is bigger than the data size. Setting batch size to data size
+Warning: batch size is bigger than the data size. Setting batch size to data size
+FID:  549.5006048290899
+Error processing 00000065.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000076.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000055.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000073.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000057.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000049.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000061.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000072.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000063.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000078.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000067.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000058.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000068.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000050.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000084.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000086.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000082.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000054.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000074.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000080.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000071.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000051.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000085.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000079.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000088.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000048.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000052.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000064.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000077.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000081.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000075.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000053.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000066.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000060.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000083.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000062.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000056.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000070.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000087.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000059.jpg: Could not infer dtype of JpegImageFile
+Error processing 00000069.jpg: Could not infer dtype of JpegImageFile

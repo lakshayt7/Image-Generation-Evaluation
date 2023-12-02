@@ -1,0 +1,7 @@
+usage: __main__.py [-h] [--batch-size BATCH_SIZE] [--num-workers NUM_WORKERS]
+                   [--device DEVICE] [--dims {64,192,768,2048}] [--save-stats]
+                   path path
+__main__.py: error: the following arguments are required: path
+usage: main.py [-h] [--gen_image_path GEN_IMAGE_PATH] [--gt_images GT_IMAGES]
+               [--control_path CONTROL_PATH] [--text_prompt TEXT_PROMPT]
+main.py: error: argument --gen_image_path: expected one argument
