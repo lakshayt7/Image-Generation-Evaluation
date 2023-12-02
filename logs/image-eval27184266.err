@@ -1,8 +1,0 @@
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.60s/it]100%|██████████| 1/1 [00:04<00:00,  4.63s/it]
-  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.70s/it]100%|██████████| 1/1 [00:01<00:00,  1.76s/it]
-Traceback (most recent call last):
-  File "src/main.py", line 37, in <module>
-    img_score, txt_score = clip_evaluator.evaluate(image_path, gt_path, text_prompt)
-  File "/gpfs/home/lt2504/dreambooth/Image-Generation-Evaluation/src/clip_score.py", line 113, in evaluate
-    sim_samples_to_img  = self.img_to_img_similarity(src_image_pts, gen_sample_pts)
-NameError: name 'src_image_pts' is not defined
